@@ -20,6 +20,6 @@ void search(int k) {
 }
 
 int main() {
-  search(1);
+  search(0);
   return 0;
 }

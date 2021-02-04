@@ -35,6 +35,13 @@ void print(vector<tuple<int, int, int>> v) {
     cout << "\n";
 }
 
+void print(vector<string> v) {
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << "\n";
+}
+
 ////goes over every pair of the elements possible and if the 
 ////element are not in the right order they are swapped
 //void bubbleSort(int* arr, int n) {
@@ -62,6 +69,10 @@ bool comp(string a, string b) {
 }
 
 int main() {
+
+    // ios::sync_with_stdio(0);
+    // cin.tie(0); cout.tie(0);
+
     //Sorting a vector
     vector<int> v = { 4, 2, 5, 3, 5, 8, 3 };
     //sorting in increasing order
@@ -101,11 +112,10 @@ int main() {
     print(v3);
 
     //sorting a vector of strings according to the comparison function
-    vector<string> v4 = { "1", "22", "333", "444" ,"666666" };
+    vector<string> v4 = { "444","22", "1", "333" ,"666666" };
     sort(v4.begin(), v4.end(), comp);
-    print(v3);
+    print(v4);
     return 0;
-
 }
 
 // defining a comparison function for a data structure
